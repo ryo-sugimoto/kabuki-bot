@@ -1,0 +1,9 @@
+{% extends 'museum/base.html' %}
+
+{% block content %}
+    <div>
+        <h2>{{ dbs.title }}</h2>
+        <p>{{ dbs.text|linebreaksbr|urlize }}</p>
+        <p>{{ dbs.published_date }}</p>
+    </div>
+{% endblock %}

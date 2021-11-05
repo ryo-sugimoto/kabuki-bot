@@ -1,0 +1,14 @@
+{% extends 'museum/base.html' %}
+
+{% block content %}
+
+    <h1>{{ store.name }}店 スタッフ一覧</h1>
+    <ul>
+        {% for staff in staff_list %}
+            <li><a href="{% url 'museum:calendar' staff.pk %}">{{ staff.name }}</a></li>
+            
+        {% empty %}
+            <li>まだスタッフがいません。</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'museum/base.html' %}
+
+{% block content %}
+    <h4>コラム</h4><br />
+    {% for column in columns %}
+        <div>
+            <a href="/columns/{{ column.id }}">{{ column.title }}</a>
+            <p class＝"text-muted"><small>{{ column.published_date }}</small></p>
+        </div>
+    {% endfor %}
+{% endblock %}

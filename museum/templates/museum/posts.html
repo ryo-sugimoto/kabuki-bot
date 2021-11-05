@@ -1,0 +1,24 @@
+{% extends 'museum/base.html' %}
+
+    {% block content %}
+　　　{% for post in posts %}
+
+
+
+<div class="container marketing">
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+    <div class="col-lg-4">
+      <br><br>
+      <img src="https://drive.google.com/uc?export=view&id={{ post.pictureforpost.first.avator }}&usp=sharing" alt="Generic placeholder image"  height="300">
+      <!-- <h2>Heading</h2> -->
+      <strong><a href="/posts/{{ post.id }}"><nobr>{{ post.title }}</nobr></a></strong>
+      <p><a>{{ post.price }}</a></p>
+       
+      <!-- <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> -->
+
+    </div><!-- /.col-lg-4 -->
+  </div><!-- /.row -->
+</div>
+    　{% endfor %}
+  　{% endblock %}

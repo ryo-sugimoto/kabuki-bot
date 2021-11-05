@@ -1,0 +1,11 @@
+{% extends 'museum/base.html' %}
+
+{% block content %}
+    <h4>Detroit Blues Society<br />翻訳記事</h4><br />
+    {% for dbs in dbss %}
+        <div>
+            <a href="/dbs/{{ dbs.id }}">{{ dbs.title }}</a>
+            <p class＝"text-muted"><small>{{ news.published_date }}</small></p>
+        </div>
+    {% endfor %}
+{% endblock %}

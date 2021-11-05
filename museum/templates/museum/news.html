@@ -1,0 +1,23 @@
+{% extends 'museum/base.html' %}
+
+
+
+    {% block content %}
+　　　{% for news in newss %}
+        
+        <div class="container marketing">
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+              <div class="col-lg-4">
+                <img src="https://drive.google.com/uc?export=view&id={{ news.picturefornews.first.avator }}&usp=sharing" alt="Generic placeholder image" width="140" height="140">
+                <!-- <h2>Heading</h2> -->
+                <h2><a href="/news/{{ news.id }}">{{ news.title }}</a></h2>
+                <p><a>{{ news.text }}</a></p>
+                <!-- <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> -->
+
+              </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+        </div>
+        
+    　{% endfor %}
+  　{% endblock %}

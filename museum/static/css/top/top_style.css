@@ -1,0 +1,109 @@
+.main_visual {
+    margin-bottom: 120px;
+    max-height: 600px;
+    overflow: hidden;
+}
+.main_visual img {
+    height: auto;
+    width: 100%;
+}
+@media screen and (max-width: 414px) {
+    .main_visual img {
+        width: auto;
+    }
+}
+.sec {
+    margin-bottom: 120px;
+}
+.page-title {
+    text-align: center;
+}
+.page-title__title {
+    color: #333;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.animation-box:nth-child(odd) {
+    background: #eee;
+}
+.animation-box {
+    padding: 120px;
+    transition: 0.5s;
+}
+.animation-box.active {
+    background: #666;
+    color: #fff;
+}
+.img-container {
+    overflow: hidden;
+    position: relative;
+}
+.img-container__img {
+    display: block;
+    opacity: 0;
+    position: relative;
+    transition: all 0.5s 0.3s ease;
+    z-index: 0;
+}
+.img-container:before {
+    background: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transform: translateX(-100%);
+    transition: all 0.8s 0s ease;
+    width: 100%;
+    z-index: 1;
+}
+.text-container {
+    padding: 0 60px;
+}
+.text-container__title {
+    color: #333;
+    display: inline-block;
+    font-size: 60px;
+    font-weight: 700;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+.text-container__title:before {
+    background: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transform: translateX(-100%);
+    transition: all 0.8s 0.3s ease;
+    width: 100%;
+    z-index: 1;
+}
+.text-container__title__inner {
+    display: inline-block;
+    opacity: 0;
+    transition: all 0.8s 0.5s ease;
+}
+.text-container__text {
+    left: -50px;
+    opacity: 0;
+    position: relative;
+    transition: all 0.5s 0.5s ease;
+}
+.img-container.active img {
+    opacity: 1;
+}
+.img-container.active:before {
+    transform: translateX(100%);
+}
+.text-container.active .text-container__title:before {
+    transform: translateX(100%);
+}
+.text-container.active .text-container__title__inner {
+    opacity: 1;
+}
+.text-container.active .text-container__text {
+    left: 0;
+    opacity: 1;
+}

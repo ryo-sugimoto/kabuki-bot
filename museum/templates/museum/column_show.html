@@ -1,0 +1,13 @@
+{% extends 'museum/base.html' %}
+
+{% block content %}
+    <div>
+        <h2>{{ column.title }}</h2>
+        {% if column.html %}
+            <p>{{ column.text| safe }}</p>
+        {% else %}
+            <p>{{ column.text|linebreaksbr|urlize }}</p>
+        {% endif %}
+        <p>{{ column.published_date }}</p>
+    </div>
+{% endblock %}

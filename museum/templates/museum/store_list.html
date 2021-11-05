@@ -1,0 +1,12 @@
+{% extends 'museum/base.html' %}
+
+{% block content %}
+    <h1>店舗一覧</h1>
+    <ul>
+        {% for store in store_list %}
+            <li><a href="{% url 'museum:staff_list' store.pk %}">{{ store.name }}</a></li>
+        {% empty %}
+            <li>まだ店舗がありません。</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

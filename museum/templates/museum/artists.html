@@ -1,0 +1,26 @@
+{% extends 'museum/base.html' %}
+
+{% block content %}
+    <h4>Shono's Record Collection</h4>
+    <h4><strong>&nbsp;{{ genre.name }}</strong></h4>
+    <div class="accordion" id="accordionExample">
+        {% for artist in artists %}
+            <div class="card">
+                <div class="card-header" id="heading{{ artist.id }}">
+                    <h3 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse{{ artist.id }}" aria-expanded="true" aria-controls="collapse{{ artist.id }}">
+                            <span class="text-dark">{{ artist.name }}</span>
+                        </button>
+                    </h3>
+                </div>
+                <div id ="collapse{{ artist.id }}" class="collapse" aria-labelledby="heading{{ artist.id }}" data-parent="#accordionExample">
+                    <div class="card-body">
+                        {% for post in artist.post_set.all %}
+                            <div class="pl-4 py-1"><a href="/posts/{{ post.id }}">{{ post.title }}</a></div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

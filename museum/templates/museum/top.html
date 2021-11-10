@@ -1,688 +1,337 @@
 {% extends 'museum/base.html' %}
-{% load static %}
+
 {% block content %}
 
-
-
-<!DOCTYPE html>
-<html lang="ja">
-
-<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>若井興業株式会社</title>
-  <link rel="stylesheet" href={% static 'css/top/top.css' %}>
-
-  <!-- All in One SEO 4.0.12 -->
-  <meta name="description"
-    content="若井興業株式会社">
-  <link rel="canonical" href={% url 'museum:top' %}>
-  <meta property="og:site_name" content="若井興業株式会社">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="若井興業株式会社">
-  <meta property="og:description"
-    content="若井興業株式会社">
-  <meta property="og:url" content="{% url 'museum:top' %}">
-  <meta property="og:image" content="http://www.miraiasist1.com/wp-content/uploads/logo_ogp.jpg">
-  <meta property="article:published_time" content="2021-02-03T08:29:29Z">
-  <meta property="article:modified_time" content="2021-02-04T09:31:33Z">
-  <meta property="twitter:card" content="summary">
-  <meta property="twitter:domain" content="pacific-springs-93264.herokuapp.com">
-  <meta property="twitter:title" content="若井興業株式会社">
-  <meta property="twitter:description"
-    content="若井興業株式会社">
-  <meta property="twitter:image" content="https://www.miraiasist1.com/wp-content/uploads/logo_ogp.jpg">
-  <script src={% static 'js/top/sdk.js' %} async="" crossorigin="anonymous"></script>
-  <script id="facebook-jssdk" src={% static 'js/top/sdk(1).js' %}></script>
-  <script type="application/ld+json" class="aioseo-schema">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebSite","@id":"http:\/\/s10316900000001.nx1.hpms1.jp\/#website","url":"http:\/\/s10316900000001.nx1.hpms1.jp\/","name":"\u5408\u540c\u4f1a\u793e\u307f\u3089\u3044\u30a2\u30b7\u30b9\u30c8","description":"\u5408\u540c\u4f1a\u793e\u307f\u3089\u3044\u30a2\u30b7\u30b9\u30c8","publisher":{"@id":"http:\/\/s10316900000001.nx1.hpms1.jp\/#organization"},"potentialAction":{"@type":"SearchAction","target":"http:\/\/s10316900000001.nx1.hpms1.jp\/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"Organization","@id":"http:\/\/s10316900000001.nx1.hpms1.jp\/#organization","name":"\u5408\u540c\u4f1a\u793e\u307f\u3089\u3044\u30a2\u30b7\u30b9\u30c8","url":"http:\/\/s10316900000001.nx1.hpms1.jp\/","logo":{"@type":"ImageObject","@id":"http:\/\/s10316900000001.nx1.hpms1.jp\/#organizationLogo"},"image":{"@id":"http:\/\/s10316900000001.nx1.hpms1.jp\/#organizationLogo"}},{"@type":"BreadcrumbList","@id":"http:\/\/s10316900000001.nx1.hpms1.jp\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"http:\/\/s10316900000001.nx1.hpms1.jp\/#listItem","position":1,"item":{"@type":"WebPage","@id":"http:\/\/s10316900000001.nx1.hpms1.jp\/#item","name":"\u30db\u30fc\u30e0","description":"\u672d\u5e4c\u5e02\u8c4a\u5e73\u533a\u5e73\u5cb8\u306b\u3042\u308b\u300e\u5408\u540c\u4f1a\u793e\u307f\u3089\u3044\u30a2\u30b7\u30b9\u30c8\u300f\u3067\u3059\u3002\u672d\u5e4c\u5e02\u3067\u304a\u5ba2\u69d8\u306b\u201c\u5bc4\u308a\u6dfb\u3046\u201d\u907a\u54c1\u6574\u7406\u3084\u798f\u7949\u6574\u7406\u3001\u751f\u524d\u6574\u7406\u3001\u7279\u6b8a\u6e05\u6383\u306a\u3069\u306e\u30b5\u30fc\u30d3\u30b9\u306e\u3054\u63d0\u4f9b\u306a\u3089\u5f53\u793e\u306b\u304a\u4efb\u305b\u304f\u3060\u3055\u3044\u3002\u304a\u898b\u7a4d\u3082\u308a\u306f\u7121\u6599\u3067\u3059\u306e\u3067\u3001\u304a\u6c17\u8efd\u306b\u304a\u554f\u3044\u5408\u308f\u305b\u304f\u3060\u3055\u3044\u3002","url":"http:\/\/s10316900000001.nx1.hpms1.jp\/"}}]},{"@type":"WebPage","@id":"http:\/\/s10316900000001.nx1.hpms1.jp\/#webpage","url":"http:\/\/s10316900000001.nx1.hpms1.jp\/","name":"\u5408\u540c\u4f1a\u793e\u307f\u3089\u3044\u30a2\u30b7\u30b9\u30c8\uff5c\u672d\u5e4c\u5e02\u3067\u304a\u5ba2\u69d8\u306b\u201c\u5bc4\u308a\u6dfb\u3046\u201d\u907a\u54c1\u6574\u7406","description":"\u672d\u5e4c\u5e02\u8c4a\u5e73\u533a\u5e73\u5cb8\u306b\u3042\u308b\u300e\u5408\u540c\u4f1a\u793e\u307f\u3089\u3044\u30a2\u30b7\u30b9\u30c8\u300f\u3067\u3059\u3002\u672d\u5e4c\u5e02\u3067\u304a\u5ba2\u69d8\u306b\u201c\u5bc4\u308a\u6dfb\u3046\u201d\u907a\u54c1\u6574\u7406\u3084\u798f\u7949\u6574\u7406\u3001\u751f\u524d\u6574\u7406\u3001\u7279\u6b8a\u6e05\u6383\u306a\u3069\u306e\u30b5\u30fc\u30d3\u30b9\u306e\u3054\u63d0\u4f9b\u306a\u3089\u5f53\u793e\u306b\u304a\u4efb\u305b\u304f\u3060\u3055\u3044\u3002\u304a\u898b\u7a4d\u3082\u308a\u306f\u7121\u6599\u3067\u3059\u306e\u3067\u3001\u304a\u6c17\u8efd\u306b\u304a\u554f\u3044\u5408\u308f\u305b\u304f\u3060\u3055\u3044\u3002","inLanguage":"ja","isPartOf":{"@id":"http:\/\/s10316900000001.nx1.hpms1.jp\/#website"},"breadcrumb":{"@id":"http:\/\/s10316900000001.nx1.hpms1.jp\/#breadcrumblist"},"datePublished":"2021-02-03T08:29:29+09:00","dateModified":"2021-02-04T09:31:33+09:00"}]}
-		</script>
-  <!-- All in One SEO -->
-
-  <link rel="dns-prefetch" href="http://ajaxzip3.github.io/">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1/slick/slick.min.css">
-
-  <link rel="stylesheet" href={% static 'css/top/slick.css' %}>
-  <link rel="stylesheet" href={% static 'css/top/top_style.css' %}>
-
-  <script type="text/javascript" src={% static 'js/top/jquery.min.js' %} id="jquery-js"></script>
-  <script type="text/javascript" src={% static 'js/top/ajaxzip3.js' %} id="ajaxzip3-js-js"></script>
-
-  <script src={% static 'js/top/slick.min.js' %}></script>
-  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1/slick/slick.min.js"></script>
-  <script>
-    jQuery(function ($) {
-      $('.main_visual_slick').slick({
-        autoplay: true,
-        autoplaySpeed: 5000,
-        centerMode: false,
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              arrows: false,
-              centerMode: false,
-              variableWidth: false,
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              arrows: false,
-              centerMode: false,
-              variableWidth: false,
-            }
-          }
-        ]
-      });
-    })
-  </script>
-  <link rel="shortlink" href={% url 'museum:top' %}>
-  <script>
-    jQuery(function ($) {
-      $("#zip").attr('onKeyUp', 'AjaxZip3.zip2addr(this,\'\',\'address\',\'address\');');
-      $("#zip2").attr('onKeyUp', 'AjaxZip3.zip2addr(\'zip1\',\'zip2\',\'prefecture\',\'city\',\'street\');');
-    })
-  </script>
-  <link href={% static 'css/top/css.css' %} rel="stylesheet">
-
-  <script type="application/ld+json">
-  {
-    "@context": "http://schema.org/",
-    "@type": "LocalBusiness",
-    "name": "",
-    "address": "",
-    "telephone": "",
-    "faxNumber": "",
-    "url": "https://pacific-springs-93264.herokuapp.com",
-    "email": "",
-    "image": "http://s10316900000001.nx1.hpms1.jp/wp-content/uploads/logo_ogp.jpg",
-    "logo": "http://s10316900000001.nx1.hpms1.jp/wp-content/uploads/logo_org.png"
+<style>
+  .carousel-control-next, .carousel-control-prev {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 15%;
+      color: #9e9e9e8f;
+      text-align: center;
+      opacity: 0.5;
+      background: #9e9e9e1f;
   }
-</script>
-  <style type="text/css" data-fbcssmodules="css:fb.css.basecss:fb.css.dialog css:fb.css.iframewidget">
-    .fb_hidden {
-      position: absolute;
-      top: -10000px;
-      z-index: 10001
-    }
+  .carousel-item{
+      text-align: center;
+  }
+  .carousel-caption{
 
-    .fb_reposition {
-      overflow: hidden;
-      position: relative
-    }
+      text-align: right;
+  }
+  .center{
+    text-align: center;
+    
+  }
+  p.sample1 img {
+    border-radius: 70px; /* ちょっとだけ角丸 */
+  }
+  
+.pc { display: block !important; text-align: center;}
+.sp { display: none !important; } 
+ 
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 750px) {
+    .pc { display: none !important; }
+    .sp { display: block !important; }
+}
 
-    .fb_invisible {
-      display: none
-    }
+</style>
 
-    .fb_reset {
-      background: none;
-      border: 0;
-      border-spacing: 0;
-      color: #000;
-      cursor: auto;
-      direction: ltr;
-      font-family: "lucida grande", tahoma, verdana, arial, "hiragino kaku gothic pro", meiryo, "ms pgothic", sans-serif;
-      font-size: 11px;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: normal;
-      letter-spacing: normal;
-      line-height: 1;
-      margin: 0;
-      overflow: visible;
-      padding: 0;
-      text-align: left;
-      text-decoration: none;
-      text-indent: 0;
-      text-shadow: none;
-      text-transform: none;
-      visibility: visible;
-      white-space: normal;
-      word-spacing: normal
-    }
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+    <title>カルーセルテンプレート for Bootstrap · Bootstrap v5.0</title>
 
-    .fb_reset>div {
-      overflow: hidden
-    }
+    <link rel="canonical" href="https://getbootstrap.jp/docs/5.0/examples/carousel/">
 
-    @keyframes fb_transform {
-      from {
-        opacity: 0;
-        transform: scale(.95)
-      }
-
-      to {
-        opacity: 1;
-        transform: scale(1)
-      }
-    }
-
-    .fb_animate {
-      animation: fb_transform .3s forwards
-    }
-
-    .fb_dialog {
-      background: rgba(82, 82, 82, .7);
-      position: absolute;
-      top: -10000px;
-      z-index: 10001
-    }
-
-    .fb_dialog_advanced {
-      border-radius: 8px;
-      padding: 10px
-    }
-
-    .fb_dialog_content {
-      background: #fff;
-      color: #373737
-    }
-
-    .fb_dialog_close_icon {
-      background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;
-      cursor: pointer;
-      display: block;
-      height: 15px;
-      position: absolute;
-      right: 18px;
-      top: 17px;
-      width: 15px
-    }
     
 
-    .fb_dialog_mobile .fb_dialog_close_icon {
-      left: 5px;
-      right: auto;
-      top: 5px
-    }
+    <!-- Bootstrap core CSS -->
+<link href=https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-    .fb_dialog_padding {
-      background-color: transparent;
-      position: absolute;
-      width: 1px;
-      z-index: -1
-    }
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3">
 
-    .fb_dialog_close_icon:hover {
-      background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent
-    }
 
-    .fb_dialog_close_icon:active {
-      background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent
-    }
-
-    .fb_dialog_iframe {
-      line-height: 0
-    }
-
-    .fb_dialog_content .dialog_title {
-      background: #6d84b4;
-      border: 1px solid #365899;
-      color: #fff;
-      font-size: 14px;
-      font-weight: bold;
-      margin: 0
-    }
-
-    .fb_dialog_content .dialog_title>span {
-      background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;
-      float: left;
-      padding: 5px 0 7px 26px
-    }
-
-    body.fb_hidden {
-      height: 100%;
-      left: 0;
-      margin: 0;
-      overflow: visible;
-      position: absolute;
-      top: -10000px;
-      transform: none;
-      width: 100%
-    }
-
-    .fb_dialog.fb_dialog_mobile.loading {
-      background: url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;
-      min-height: 100%;
-      min-width: 100%;
-      overflow: hidden;
-      position: absolute;
-      top: 0;
-      z-index: 10001
-    }
-
-    .fb_dialog.fb_dialog_mobile.loading.centered {
-      background: none;
-      height: auto;
-      min-height: initial;
-      min-width: initial;
-      width: auto
-    }
-
-    .fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner {
-      width: 100%
-    }
-
-    .fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content {
-      background: none
-    }
-
-    .loading.centered #fb_dialog_loader_close {
-      clear: both;
-      color: #fff;
-      display: block;
-      font-size: 18px;
-      padding-top: 20px
-    }
-
-    #fb-root #fb_dialog_ipad_overlay {
-      background: rgba(0, 0, 0, .4);
-      bottom: 0;
-      left: 0;
-      min-height: 100%;
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 100%;
-      z-index: 10000
-    }
-
-    #fb-root #fb_dialog_ipad_overlay.hidden {
-      display: none
-    }
-
-    .fb_dialog.fb_dialog_mobile.loading iframe {
-      visibility: hidden
-    }
-
-    .fb_dialog_mobile .fb_dialog_iframe {
-      position: sticky;
-      top: 0
-    }
-
-    .fb_dialog_content .dialog_header {
-      background: linear-gradient(from(#738aba), to(#2c4987));
-      border-bottom: 1px solid;
-      border-color: #043b87;
-      box-shadow: white 0 1px 1px -1px inset;
-      color: #fff;
-      font: bold 14px Helvetica, sans-serif;
-      text-overflow: ellipsis;
-      text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0;
-      vertical-align: middle;
-      white-space: nowrap
-    }
-
-    .fb_dialog_content .dialog_header table {
-      height: 43px;
-      width: 100%
-    }
-
-    .fb_dialog_content .dialog_header td.header_left {
-      font-size: 12px;
-      padding-left: 5px;
-      vertical-align: middle;
-      width: 60px
-    }
-
-    .fb_dialog_content .dialog_header td.header_right {
-      font-size: 12px;
-      padding-right: 5px;
-      vertical-align: middle;
-      width: 60px
-    }
-
-    .fb_dialog_content .touchable_button {
-      background: linear-gradient(from(#4267B2), to(#2a4887));
-      background-clip: padding-box;
-      border: 1px solid #29487d;
-      border-radius: 3px;
-      display: inline-block;
-      line-height: 18px;
-      margin-top: 3px;
-      max-width: 85px;
-      padding: 4px 12px;
-      position: relative
-    }
-
-    .fb_dialog_content .dialog_header .touchable_button input {
-      background: none;
-      border: none;
-      color: #fff;
-      font: bold 12px Helvetica, sans-serif;
-      margin: 2px -12px;
-      padding: 2px 6px 3px 6px;
-      text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0
-    }
-
-    .fb_dialog_content .dialog_header .header_center {
-      color: #fff;
-      font-size: 16px;
-      font-weight: bold;
-      line-height: 18px;
-      text-align: center;
-      vertical-align: middle
-    }
-
-    .fb_dialog_content .dialog_content {
-      background: url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;
-      border: 1px solid #4a4a4a;
-      border-bottom: 0;
-      border-top: 0;
-      height: 150px
-    }
-
-    .fb_dialog_content .dialog_footer {
-      background: #f5f6f7;
-      border: 1px solid #4a4a4a;
-      border-top-color: #ccc;
-      height: 40px
-    }
-
-    #fb_dialog_loader_close {
-      float: left
-    }
-
-    .fb_dialog.fb_dialog_mobile .fb_dialog_close_icon {
-      visibility: hidden
-    }
-
-    #fb_dialog_loader_spinner {
-      animation: rotateSpinner 1.2s linear infinite;
-      background-color: transparent;
-      background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-      height: 24px;
-      width: 24px
-    }
-
-    @keyframes rotateSpinner {
-      0% {
-        transform: rotate(0deg)
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
       }
 
-      100% {
-        transform: rotate(360deg)
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
       }
-    }
+    </style>
 
-    .fb_iframe_widget {
-      display: inline-block;
-      position: relative
-    }
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+      <p class="h5 my-0 me-md-auto fw-normal">#ボットで初回</p>
+      <nav class="my-2 my-md-0 me-md-3">
+        
+        <a class="p-2 text-dark" href="#title" >ボットで初回？</a>
+        <a class="p-2 text-dark" href="#abcd">使い方</a>
+        <a class="p-2 text-dark" href="/posts">店舗一覧</a>
+      </nav>
+      
+      
+    </header>
 
-    .fb_iframe_widget span {
-      display: inline-block;
-      position: relative;
-      text-align: justify
-    }
 
-    .fb_iframe_widget iframe {
-      position: absolute
-    }
 
-    .fb_iframe_widget_fluid_desktop,
-    .fb_iframe_widget_fluid_desktop span,
-    .fb_iframe_widget_fluid_desktop iframe {
-      max-width: 100%
-    }
+<main> 
 
-    .fb_iframe_widget_fluid_desktop iframe {
-      min-width: 220px;
-      position: relative
-    }
-
-    .fb_iframe_widget_lift {
-      z-index: 1
-    }
-
-    .fb_iframe_widget_fluid {
-      display: inline
-    }
-
-    .fb_iframe_widget_fluid span {
-      width: 100%
-    }
-  </style>
-</head>
-
-<body class="scrollTop home touch-disabled up" style="padding-top: 0px;">
-
-  <div id="fb-root" class=" fb_reset">
-    <div style="position: absolute; top: -10000px; width: 0px; height: 0px;">
-      <div></div>
+  <br><br><br><br>
+  <div class="center">
+    <p class="sample1">
+      <img class="sp" src="https://drive.google.com/uc?export=view&id=14Wi1rEfM_pYiCTI35ATH73cYjWf5nKL2&usp=sharing"　width="auto" height="31%" >
+      <img class="pc" src="https://drive.google.com/uc?export=view&id=14Wi1rEfM_pYiCTI35ATH73cYjWf5nKL2&usp=sharing"　margin ="0 auto" width="1200" height="300" >
+    </p>
+    <h4>今すぐ行ける初回を即ご案内</h4>
+    <h4>ラインで簡単予約できる</h4>
+    <h4>オンライン外販</h4>
     </div>
   </div>
-  <script>(function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.12';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
 
-  <header class="low">
-    <div class="primary_header">
-      <div class="container">
-        <div class="row">
-          <h1 class="title">
-            <a href={% url 'museum:top' %}>
-              <nobr>若井興業株式会社</nobr>
-              {% load static %}
-          <img src="{% static 'IMG_0737.jpg' %}"　width="1" >
-            </a>
-          </h1>
-          <div class="hdr_info_wrap">
-            <div class="hdr_info">
-              <span class="pc-only">
-                <span class="tel">TEL 090-8821-0322</span><br>
-                
-              </span>
-              <span class="hdr_info_sp sp-only"><a href="tel:090-8821-0322"><img
-                    src="{% static 'tell.jpg' %}"
-                    alt="TEL"></a></span>
-            </div>
-          </div>
-          <nav class="global_nav">
-            <ul>
-              <li<a href="/news"></a></li>
 
-                <li class="gnav_search">
-                 
+  <br><br>
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
 
-                </li>
-            </ul>
-            <div class="menu_icon">
-              
-            </div>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
-  <main>
+        <div class="carousel-item active">
 
-    <div class="main_visual">
-      <ul class="">
-        <div class="">
-          <div class="main_visual_slick" style="opacity: 1;">
-            <li style="position:relative;"><img src="{% static 'IMG_0737.jpg' %}"　width="1" ><noscript></li>
-            <li style="position:relative;"><noscript><img
-                  src="/wp-content/uploads/image2.jpg" alt="" class="pc-only03" /></noscript> <img class="sp-img"
-                src="{% static 'IMG_0737.jpg' %}" data-lazy-type="image"
-                data-lazy-src="/wp-content/uploads/sp_image2.jpg" alt=""
-                class="lazy sp-only03 lazy-loaded"><noscript><img src="/wp-content/uploads/sp_image2.jpg" alt=""
-                  class="sp-only03" /></noscript></li>
-            <li style="position:relative;"><noscript><img
-                  src="/wp-content/uploads/image3.jpg" alt="" class="pc-only03" /></noscript> <img class="sp-img"
-                src="{% static 'sky.jpg' %}" data-lazy-type="image"
-                data-lazy-src="/wp-content/uploads/sp_image3.jpg" alt=""
-                class="lazy sp-only03 lazy-loaded"><noscript><img src="/wp-content/uploads/sp_image3.jpg" alt=""
-                  class="sp-only03" /></noscript></li>
-          </div>
+        
+          <img class="pc" src="https://drive.google.com/uc?export=view&id=1fpH--gwChC-NepmUX5Xiev1luh3Z2wDL&usp=sharing"　margin ="0 auto" width="1500" height="500">
+          <img class="sp" src="https://drive.google.com/uc?export=view&id=1fpH--gwChC-NepmUX5Xiev1luh3Z2wDL&usp=sharing"　width="auto" height="250">
         </div>
 
+        <div class="carousel-item">
 
-      </ul>
-      <ul class="main_visual_copy">
-        <p class="m-co-1 m-co-1-sp" color="white">
-          <font color="white" text-align="center" >若井興業株式会社</font>
-
-          </p>
-        <li><img
-            src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22208%22%20height%3D%22226%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20208%20226%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_179b2174022%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A11pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_179b2174022%22%3E%3Crect%20width%3D%22208%22%20height%3D%22226%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2266.9296875%22%20y%3D%22117.95%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-            alt="若井興業株式会社" data-lazy-type="image" data-lazy-src="/wp-content/uploads/sp_main_copy1.png" alt=""
-            class="lazy sp-only03 lazy-loaded"><noscript><img src="/wp-content/uploads/sp_main_copy1.png" alt=""
-              class="sp-only03" />
-              </noscript>
-              <img src="/assets/material_files/logo.jpg" data-lazy-type="image"
-            data-lazy-src="/wp-content/uploads/main_copy1.png" alt="" class="lazy pc-only03 lazy-loaded">
-            <noscript>
-            <img src="/wp-content/uploads/main_copy1.png" alt="" class="pc-only03" /></noscript>
-              </li>
-        <p class="m-co-2 m-co-2-sp"><font color="white">お客様に”寄り添う”ことを徹底し</font></p>
-        <p class="m-co-3 m-co-3-sp"><font color="white">心から喜んでいただけるサービスをご提供します</font></p>
-        <p class="m-co-4 m-co-4-sp"><font color="white">可能な限りどのようなご相談にも対応させていただきます</font></p>
-      </ul>
-    </div>
-    <div class="sec_wrap">
-      {% for post in posts %}
-      <section class="th03_bnr wow sec01 animated" style="visibility: visible;">
-
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 th03_bnr_img">
-              <img src="https://drive.google.com/uc?export=view&id={{ post.pictureforpost.first.avator }}&usp=sharing" alt="Generic placeholder image" height="auto">
-            </div>
-            <div class="col-sm-6 th03_bnr_text">
-              
-              <h2>{{ post.title }}</h2>
-              <p>{{ post.text|linebreaksbr|urlize }}</p>
-              <p class="th03_bnr_button more "><a href="/posts/{{ post.id }}"
-                  class="add_arrow">詳しくはこちら</a></p>
-            </div>
-          </div>
+        
+          <img class="sp" src="https://drive.google.com/uc?export=view&id=1fpH--gwChC-NepmUX5Xiev1luh3Z2wDL&usp=sharing"　width="auto" height="250">
+          <img class="pc" src="https://drive.google.com/uc?export=view&id=1fpH--gwChC-NepmUX5Xiev1luh3Z2wDL&usp=sharing"　margin ="0 auto" width="1500" height="400">
+          
         </div>
-      </section>
-      {% endfor %}
-
     </div>
+
+
     
-    <section class="sec03">
-      <div class="container gutters news typeB">
-        <div>
-          <div class="heading">
-            <h2>お知らせ</h2>
-          </div>
-          <div class="content row">
-            <dl>{% for news in newss %}
-              <dt>
-                <p>{{ news.published_date.year }}/{{ news.published_date.month }}/{{ news.published_date.day }}</p>
-              </dt>
-              <dd>
-                <p><a
-                    href="/news/{{ news.id }}">{{ news.title }}</a>
+    
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
+
+<br>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+
+
+<br>
+
+<div class="album py-5 bg-light">
+  <a name="title">　<br>　</a>
+  <div class="container">
+    <div class="row">
+                
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm" >
+              <div style="text-align: center; margin-top: 15px;">
+                <p class="sample">
+                  <img src="https://drive.google.com/uc?export=view&id=1Tn4aQ-D8KoFydlJEZBwpV1BbG1vk38-_&usp=sharing" alt="Generic placeholder image"  height="170" width="auto">
                 </p>
-              </dd>
-              {% endfor %}
-            </dl>
+              </div>
+              <div class="card-body">
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <p class="card-text"><a >路上の外販に店を紹介してもらうより、スマートでスムーズ</a></p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
 
+                      <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                      
+                    </div>
+                    <!-- <small class="text-muted">9 mins</small> -->
 
-          </div>
-          <div class="row">
-
-          </div>
+                </div>
+              </div>
+          
         </div>
       </div>
-    </section>
-    <section class="sec04">
-      <div class="container gutters">
-        <div class="row shopinfo tile">
-          <div class="col span_3" style="height: 521px;">
-            <figure></noscript></figure>
-            <dl>
-              <dt>会社名</dt>
-              <dd>若井興業株式会社</dd>
-              <dt>住所</dt>
-              <dd>〒530-0035<br>大阪府大阪市北区同心2－13－8－304</dd>
-              <dt>TEL</dt>
-              <dd><span class="pc-only">090-8821－03220</span> <span class="sp-only"> <a
-                    href="tel:090-8821－032">090-8821－0322</a> </span></dd>
-              <dd><span class="pc-only">06-7171－3420</span> <span class="sp-only"> <a
-                href="tel:06-7171－3420">06-7171－3420</a> </span></dd>
-              
-              <dt>代表取締役社長<br>若井隆司</dt>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm" >
+              <div style="text-align: center; margin-top: 15px;">
+                <p class="sample">
+                  <img src="https://drive.google.com/uc?export=view&id=1DVeegeoIMnuxZCGwBAOV5O6q6HRFpw9X&usp=sharing" alt="Generic placeholder image"  height="170" width="auto">
+                </p>
+              </div>
+              <div class="card-body">
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <p class="card-text"><a >ラインボットが即レスでお店を探すので早くてわかりやすい</a></p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
 
-            </dl>
+                      <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                      
+                    </div>
+                    <!-- <small class="text-muted">9 mins</small> -->
 
-          </div>
-          <div class="col span_9" style="height: 521px;">
-            <div class="map_container"><iframe style="border: 0;"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4849.527718210692!2d135.51460658642395!3d34.70230965231953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6c58a383747%3A0x4cf748e780371e92!2z44CSNTMwLTAwMzUg5aSn6Ziq5bqc5aSn6Ziq5biC5YyX5Yy65ZCM5b-D77yS5LiB55uu77yR77yT4oiS77yY!5e0!3m2!1sja!2sjp!4v1623748487049!5m2!1sja!2sjp"
-                frameborder="0" allowfullscreen="allowfullscreen" class="googlemap"></iframe><noscript><iframe
-                  style="border: 0;"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4849.527718210692!2d135.51460658642395!3d34.70230965231953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6c58a383747%3A0x4cf748e780371e92!2z44CSNTMwLTAwMzUg5aSn6Ziq5bqc5aSn6Ziq5biC5YyX5Yy65ZCM5b-D77yS5LiB55uu77yR77yT4oiS77yY!5e0!3m2!1sja!2sjp!4v1623748487049!5m2!1sja!2sjp"
-                  frameborder="0" allowfullscreen="allowfullscreen" class="googlemap"></iframe></noscript></div>
-          </div>
+                </div>
+              </div>
+          
         </div>
       </div>
-    </section>
-    <section class="contact_info">
-      <div class="parallax_contact_info_inner">
-        <h2>お問い合わせ</h2>
-        <p>若井興業株式会社へのお問い合わせは<br>お気軽にご連絡ください。</p>
-        <p class="contact_info_address"><span>【TEL】<span class="pc-only">090-8821－0322</span><span class="sp-only"><a
-                href="tel:090-8821－0322">090-8821－0322</a></span></span></p>
-        <p>【営業時間】8:00~20:00<br>【定休日】不定休</p>
-        <p class="more text-center"><a href="mailto:wakaikougyou.kk&#64;icloud.com"
-            class="add_arrow">メールはこちら</a></p>
-      </div>
-    </section>
-  </main>
-  <footer class="low">
-    <div class="footer_nav_wrap">
-      <div class="container">
-        <div class="row">
-          <nav class="col span_12">
-            <ul>
-              <li></li>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm" >
+              <div style="text-align: center; margin-top: 15px;">
+                <p class="sample">
+                  <img src="https://drive.google.com/uc?export=view&id=1z1VOk6lisLMR6KwApATPDADW-yv5lvqZ&usp=sharing" alt="Generic placeholder image"  height="170" width="auto">
+                </p>
+              </div>
+              <div class="card-body">
+                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                  <p class="card-text"><a >ラインボットが24時間いつでもお問い合わせに対応します</a></p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
 
-            </ul>
-          </nav>
+                      <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                      
+                    </div>
+                    <!-- <small class="text-muted">9 mins</small> -->
+
+                </div>
+              </div>
+          
         </div>
+      </div>
+          
+
+      
+    </div>
+    <div style="text-align: right;">
+
+    </div>
+  </div>
+</div>
+
+
+      
+
+
+
+<br>
+<a name="abcd"></a>
+  <div class="container marketing">
+    
+    <h4>使い方</h4>
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h4 class="featurette-heading">①まずはラインボットを友達追加しよう！</h4>
+        <p class="lead">掌の上で少し落ちついて書生の顔を見たのがいわゆる人間というものの見始であろう。この時妙なものだと思った感じが今でも残っている。第一毛をもって装飾されべきはずの顔がつるつるしてまるで薬缶だ。</p>
+      </div>
+      <div class="col-md-5">
+        <img src="https://drive.google.com/uc?export=view&id=1Tn4aQ-D8KoFydlJEZBwpV1BbG1vk38-_&usp=sharing"　width="auto" height="250">
+
       </div>
     </div>
-    <div class="footer_copyright_wrap">
-      <div class="container">
-        <div class="row">
-          <div class="col span_12">
-            <p>Copyright © 若井興業株式会社 All Rights Reserved.<br>
-              【掲載の記事・写真・イラストなどの無断複写・転載を禁じます】</p>
-          </div>
-        </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h4 class="featurette-heading">②ラインボットで行きたいお店も探せます！</h4>
+        <p class="lead">掌の上で少し落ちついて書生の顔を見たのがいわゆる人間というものの見始であろう。この時妙なものだと思った感じが今でも残っている。第一毛をもって装飾されべきはずの顔がつるつるしてまるで薬缶だ。</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="https://drive.google.com/uc?export=view&id=1DVeegeoIMnuxZCGwBAOV5O6q6HRFpw9X&usp=sharing"　width="auto" height="250">
+
       </div>
     </div>
-    <p class="pagetop"><a href="https://pacific-springs-93264.herokuapp.com/#top">
-      </a></p>
-  </footer>
 
-  <div id="aioseo-admin"></div>
-  <script type="text/javascript" id="contact-form-7-js-extra">
-    /* <![CDATA[ */
-    var wpcf7 = { "apiSettings": { "root": "http:\/\/s10316900000001.nx1.hpms1.jp\/wp-json\/contact-form-7\/v1", "namespace": "contact-form-7\/v1" } };
-/* ]]> */
-  </script>
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h5 class="featurette-heading"><nobr>③行きたいお店を見つけて、「行きたい！」とメッセージ！</nobr></h5>
+        <p class="lead">掌の上で少し落ちついて書生の顔を見たのがいわゆる人間というものの見始であろう。この時妙なものだと思った感じが今でも残っている。第一毛をもって装飾されべきはずの顔がつるつるしてまるで薬缶だ。</p>
+      </div>
+      <div class="col-md-5">
+        <img src="https://drive.google.com/uc?export=view&id=1z1VOk6lisLMR6KwApATPDADW-yv5lvqZ&usp=sharing"　width="auto" height="250">
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h4 class="featurette-heading">④あとは案内情報を受けとって初回へGO!</h4>
+        <p class="lead">掌の上で少し落ちついて書生の顔を見たのがいわゆる人間というものの見始であろう。この時妙なものだと思った感じが今でも残っている。第一毛をもって装飾されべきはずの顔がつるつるしてまるで薬缶だ。</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="https://drive.google.com/uc?export=view&id=14Wi1rEfM_pYiCTI35ATH73cYjWf5nKL2&usp=sharing"　width="auto" height="200">
+
+      </div>
+
+    </div>
+    </div>
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
 
 
-  
-</body>
+  <!-- FOOTER -->
 
+</main>
+
+
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+      
+  </body>
 </html>
-
-
 {% endblock %}

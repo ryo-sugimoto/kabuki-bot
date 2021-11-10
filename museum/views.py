@@ -253,7 +253,9 @@ def news_show(request, news_id):
 
 
 def thanks(request):
-    return render(request, 'museum/thanks.html')
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    newss = News.objects.all()
+    return render(request, 'museum/thanks.html', {'posts': posts, 'newss': newss})
 
 def profile(request):
     profile = Profile.objects.all()

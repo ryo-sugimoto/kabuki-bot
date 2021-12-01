@@ -3,6 +3,123 @@
 {% block content %}
 
 <style>
+
+.box{
+  float: left;
+}
+
+.boxContainer{
+  overflow: hidden;
+}
+a.btn--yellow1 {
+  color: #000;
+  background-color: #fff100;
+  border-bottom: 5px solid #ccc100;
+  width: 120px;
+}
+
+a.btn--yellow1:hover {
+  margin-top: 3px;
+  color: #000;
+  background: # fff20a;
+  border-bottom: 2px solid #ccc100;
+}
+
+a.btn--yellow2 {
+  color: #000;
+  background-color: #fff100;
+  border-bottom: 5px solid #ccc100;
+  width: 82px;
+}
+
+a.btn--yellow2:hover {
+  margin-top: 3px;
+  color: #000;
+  background: # fff20a;
+  border-bottom: 2px solid #ccc100;
+}
+a.btn--yellow3 {
+  color: #000;
+  background-color: #fff100;
+  border-bottom: 5px solid #ccc100;
+  width: 92px;
+}
+
+a.btn--yellow3:hover {
+  margin-top: 3px;
+  color: #000;
+  background: # fff20a;
+  border-bottom: 2px solid #ccc100;
+}
+
+a.btn--yellow {
+  color: #000;
+  background-color: #fff100;
+  border-bottom: 5px solid #ccc100;
+  width: 600px;
+  padding: 20px;
+}
+
+a.btn--yellow:hover {
+  margin-top: 3px;
+  color: #000;
+  background: # fff20a;
+  border-bottom: 2px solid #ccc100;
+  width: 600px;
+  padding: 20px;
+}
+
+.btn--orange2,
+a.btn--orange2 {
+  color: #fff;
+  background-color: #12f34a;
+  width: 600px;
+  padding: 20px;
+}
+.btn--orange2:hover,
+a.btn--orange2:hover {
+  color: #fff;
+  background: #12f34a;
+}
+
+.btn--orange,
+a.btn--orange {
+  color: #fff;
+  background-color: #12f34a;
+  width: 300px;
+  padding: 20px;
+}
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: #12f34a;
+}
+
+.fa-position-left {
+  position: absolute;
+  top: calc(50% - .5em);
+  left: 1rem;
+}
+
+.btn--radius,
+a.btn--radius,
+button.btn--radius
+{
+    border-radius: 200vh;
+}
+
+.container {
+  background-color: rgb(243, 221, 232);
+}
+body{
+  background-color: rgb(243, 221, 232);
+}
+.album-py-5-bg-light {
+  background-color: rgb(255, 255, 255);
+}
+.col-md-4{
+  background-color: rgb(255, 255, 255);
+}
   .carousel-control-next, .carousel-control-prev {
       position: absolute;
       top: 0;
@@ -27,17 +144,61 @@
     text-align: center;
     
   }
-  p.sample1 img {
-    border-radius: 70px; /* ちょっとだけ角丸 */
-  }
+
   
 .pc { display: block !important; text-align: center;}
-.sp { display: none !important; } 
+.sp { display: none !important; text-align: center;} 
  
 /* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
 @media only screen and (max-width: 750px) {
     .pc { display: none !important; }
     .sp { display: block !important; }
+}
+.box26 {
+    position: relative;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 3px #95ccff;
+    border-radius: 8px;
+}
+.box26 .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -13px;
+    left: 10px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 19px;
+    background: #FFF;
+    color: #95ccff;
+    font-weight: bold;
+}
+.box26 p {
+    margin: 0; 
+    padding: 0;
+}
+.box26 .box-text {
+    font-size: 15px;
+    background: #FFF;
+    color: #95ccff;
+}
+.box30 {
+    margin: 2em 0;
+    background: #f1f1f1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+}
+.box30 .box-title {
+    font-size: 1.2em;
+    background: #5fc2f5;
+    padding: 4px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+.box30 p {
+    padding: 15px 20px;
+    margin: 0;
 }
 
 </style>
@@ -110,14 +271,50 @@
   <br><br><br><br>
   <div class="center">
     <p class="sample1">
-      <img class="sp" src="https://drive.google.com/uc?export=view&id=14Wi1rEfM_pYiCTI35ATH73cYjWf5nKL2&usp=sharing"　width="auto" height="31%" >
-      <img class="pc" src="https://drive.google.com/uc?export=view&id=1Zpa0jxs57lD7aJBEJE-kPviDc9fxLgr4&usp=sharing"　margin ="0 auto" width="1200" height="300" >
+      <img class="sp" src="https://drive.google.com/uc?export=view&id=1p_Og8HBfCSQ5BeUYL_8auKFkdhcONo19&usp=sharing"　margin ="0 auto" width="auto" height="65%" >
+      <img class="pc" src="https://drive.google.com/uc?export=view&id=1p_Og8HBfCSQ5BeUYL_8auKFkdhcONo19&usp=sharing"　margin ="0 auto" width="1200" height="auto" >
     </p>
-    <h4>今すぐ行ける初回を即ご案内</h4>
-    <h4>ラインで簡単予約できる</h4>
-    <h4>オンライン外販</h4>
+
+  </div>
+
+  <div class="sp">
+
+
+    <div class="boxContainer">
+      <div class="box"><a href="#title" class="btn btn--yellow1 btn--cubic"><br><strong><nobr>ボットで初回？</nobr></strong><br>　</a></div>
+      <div class="box"><p>&nbsp;</p></div>
+      <div class="box"><a href="#abcd" class="btn btn--yellow2 btn--cubic"><br><strong>使い方</strong><br>　</a></div>
+      <div class="box"><p>&nbsp;</p></div>
+      <div class="box"><a href="/posts" class="btn btn--yellow3 btn--cubic"><br><strong>店舗一覧</strong><br>　</a></div>
     </div>
   </div>
+<div class="pc">
+
+  <div class="container">
+    <div class="p-2 pt-4">
+      <div class="row">
+        <div class="col-4 text-center div-link-parent mb-2">
+          <div><span style="font-size: 3rem; color: #666;"><i class="fas fa-user"></i></span></div>
+          <div claas="mt-0"><a href="#title" class="btn btn--yellow btn--cubic"><h3>ボットで初回？</h3></a></div>
+          <link href="carousel.css" rel="stylesheet">
+        </div>
+        <div class="col-4 text-center div-link-parent mb-2">
+          <div><span style="font-size: 3rem; color: #666;"><i class="fas fa-comments"></i></span></div>
+          <div claas="mt-0"><a href="#abcd" class="btn btn--yellow btn--cubic"><h3>使い方</h3></a></div>
+          
+        </div>
+        <div class="col-4 text-center div-link-parent mb-2">
+          <div><span style="font-size: 3rem; color: #666;"><i class="fas fa-wine-bottle"></i></span></div>
+          <div claas="mt-0"><a href="/posts" class="btn btn--yellow btn--cubic"><h3>店舗一覧</h3></a></div>
+         
+        </div>
+  
+  
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
   <br><br>
@@ -168,97 +365,97 @@
   <!-- Marketing messaging and featurettes
   ================================================== -->
   <!-- Wrap the rest of the page in another container to center all the content. -->
-
-
+  <div class="center">
+    <h4>今すぐ行ける初回を即ご案内</h4>
+    <h4>ラインで簡単予約できる</h4>
+    <h4>オンライン外販</h4>
+  </div>  
 
 <br>
 
-<div class="album py-5 bg-light">
-  <a name="title">　<br>　</a>
+</div>
+
+
+
+
+
   <div class="container">
     <div class="row">
                 
       <div class="col-md-4">
-        <div class="card mb-4 shadow-sm" >
-              <div style="text-align: center; margin-top: 15px;">
-                <p class="sample">
-                  <img src="https://drive.google.com/uc?export=view&id=1Tn4aQ-D8KoFydlJEZBwpV1BbG1vk38-_&usp=sharing" alt="Generic placeholder image"  height="170" width="auto">
-                </p>
-              </div>
-              <div class="card-body">
-                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
-                  <p class="card-text"><a >路上の外販に店を紹介してもらうより、スマートでスムーズ</a></p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
-
-                      <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                      
-                    </div>
-                    <!-- <small class="text-muted">9 mins</small> -->
-
-                </div>
-              </div>
+        <div class="box26">
+          <span class="box-title">ここにタイトル</span>
+          <p><img src="https://drive.google.com/uc?export=view&id=1DVeegeoIMnuxZCGwBAOV5O6q6HRFpw9X&usp=sharing" alt="Generic placeholder image"  height="200" width="auto"></p>
           
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card mb-4 shadow-sm" >
-              <div style="text-align: center; margin-top: 15px;">
-                <p class="sample">
-                  <img src="https://drive.google.com/uc?export=view&id=1DVeegeoIMnuxZCGwBAOV5O6q6HRFpw9X&usp=sharing" alt="Generic placeholder image"  height="170" width="auto">
-                </p>
-              </div>
-              <div class="card-body">
-                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
-                  <p class="card-text"><a >ラインボットが即レスでお店を探すので早くてわかりやすい</a></p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
-
-                      <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                      
-                    </div>
-                    <!-- <small class="text-muted">9 mins</small> -->
-
-                </div>
-              </div>
+        <div class="box26">
+          <span class="box-title">ここにタイトル</span>
+          <p><img src="https://drive.google.com/uc?export=view&id=1DVeegeoIMnuxZCGwBAOV5O6q6HRFpw9X&usp=sharing" alt="Generic placeholder image"  height="200" width="auto"></p>
           
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card mb-4 shadow-sm" >
-              <div style="text-align: center; margin-top: 15px;">
-                <p class="sample">
-                  <img src="https://drive.google.com/uc?export=view&id=1z1VOk6lisLMR6KwApATPDADW-yv5lvqZ&usp=sharing" alt="Generic placeholder image"  height="170" width="auto">
-                </p>
-              </div>
-              <div class="card-body">
-                  <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
-                  <p class="card-text"><a >ラインボットが24時間いつでもお問い合わせに対応します</a></p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
+        <div class="box26">
+          <span class="box-title">ここにタイトル</span>
+          <p><img src="https://drive.google.com/uc?export=view&id=1DVeegeoIMnuxZCGwBAOV5O6q6HRFpw9X&usp=sharing" alt="Generic placeholder image"  height="200" width="auto"></p>
+          
+        </div>
+      </div>    
 
-                      <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                      
-                    </div>
-                    <!-- <small class="text-muted">9 mins</small> -->
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="sp">
+    <div class="center">
+      <a href="" class="btn btn--orange"><i class="fas fa-phone-alt fa-position-left"></i><h2>まずはLINEでお問い合わせ</h2></a>
+      <br><br>
+    </div> 
+  </div>
+  <div class="pc">
+    <div class="center">
+      <a href="" class="btn btn--orange2"><i class="fas fa-phone-alt fa-position-left"></i><h2>まずはLINEでお問い合わせ</h2></a>
+      <br><br>
+    </div> 
+  </div>
+  <br>
+  <br>
 
-                </div>
-              </div>
+  <div class="container">
+    <h4>使い方</h4>
+    <div class="row">
+                
+      <div class="col-md-4">
+        <div class="box30">
+          <span class="box-title">ここにタイトル</span>
+          <p><img src="https://drive.google.com/uc?export=view&id=1DVeegeoIMnuxZCGwBAOV5O6q6HRFpw9X&usp=sharing" alt="Generic placeholder image"  height="200" width="auto"></p>
           
         </div>
       </div>
+      <div class="col-md-4">
+        <div class="box30">
+          <span class="box-title">ここにタイトル</span>
+          <p><img src="https://drive.google.com/uc?export=view&id=1DVeegeoIMnuxZCGwBAOV5O6q6HRFpw9X&usp=sharing" alt="Generic placeholder image"  height="200" width="auto"></p>
           
-
-      
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="box30">
+          <span class="box-title">ここにタイトル</span>
+          <p><img src="https://drive.google.com/uc?export=view&id=1DVeegeoIMnuxZCGwBAOV5O6q6HRFpw9X&usp=sharing" alt="Generic placeholder image"  height="200" width="auto"></p>
+          
+        </div>
+      </div>     
     </div>
     <div style="text-align: right;">
 
     </div>
   </div>
-</div>
+
+
+
 
 
       
@@ -267,64 +464,9 @@
 
 <br>
 <a name="abcd"></a>
-  <div class="container marketing">
+
     
-    <h4>使い方</h4>
-    <!-- START THE FEATURETTES -->
 
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h4 class="featurette-heading">①まずはラインボットを友達追加しよう！</h4>
-        <p class="lead"><small>登録不要！<br>簡単ライン追加で今すぐ使えます！</small></p>
-      </div>
-      <div class="col-md-5">
-        <img src="https://drive.google.com/uc?export=view&id=1R9q2aI4a4QoecEFkt838TLtvpgpCiU3x&usp=sharing"　width="auto" height="200">
-
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h4 class="featurette-heading">②ラインボットで行きたいお店も探せます！</h4>
-      <p class="lead"><small>ライン内で簡単店舗検索から予約まで！</small></p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <img src="https://drive.google.com/uc?export=view&id=1DVeegeoIMnuxZCGwBAOV5O6q6HRFpw9X&usp=sharing"　width="auto" height="250">
-
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h5 class="featurette-heading"><nobr>③行きたいお店を見つけて、「行きたい！」とメッセージ！</nobr></h5>
-      <p class="lead"><small>気になるお店を見つけたら<br>「行きたい！」とメッセージすするだけ！</small></p>
-      </div>
-      <div class="col-md-5">
-        <img src="https://drive.google.com/uc?export=view&id=1z1VOk6lisLMR6KwApATPDADW-yv5lvqZ&usp=sharing"　width="auto" height="250">
-
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h4 class="featurette-heading">④あとは案内情報を受けとって初回へGO!</h4>
-      <p class="lead"><small>5分以内に空き情報を確認して<br>速攻ご案内！！</small></p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <img src="https://drive.google.com/uc?export=view&id=17tdJJVTU9DG-PFDpQe7M9_VtvDgVqiLL&usp=sharing"　width="auto" height="250">
-
-      </div>
-
-    </div>
-    </div>
 
     <!-- /END THE FEATURETTES -->
 

@@ -1,0 +1,45 @@
+.mobile {
+    display: none;
+}
+
+.desktop {
+    display: unset;
+}
+
+header {
+    padding: 0 200px;
+}
+
+.link_list {
+    margin: 60px 0 100px 0;
+    padding: 0 200px;
+}
+
+.Line_shokai {
+    padding: 0 200px;
+
+    .cards {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.how_to_use {
+    margin-bottom: 50px;
+
+    .card_steps {
+        padding: 0 350px;
+    }
+    
+    .card_allow {
+        margin: 30px 0;
+    }
+}
+
+// parts
+.conversion_button.big {
+    padding: 30px 0;
+    font-size: 30px;
+    width: 30%;
+    margin: 30px 0px 100px 0px;
+}

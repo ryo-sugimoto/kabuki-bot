@@ -1,0 +1,573 @@
+.header_color {
+  background: #F3E0E6;
+}
+
+.main_color {
+  color: #96E4F0;
+}
+
+body {
+  background-color: #F3E0E6;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .shokai {
+  font-size: 25px;
+  font-weight: bold;
+  display: inline-block;
+  color: #01B901;
+}
+
+.link_list {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.link_list ul a {
+  display: inline-block;
+  border: 2px solid white;
+  color: white;
+  width: 30%;
+  height: 30%;
+  padding: 20px;
+  background: #96E4F0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.link_list ul a .link_name {
+  width: 70px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.link_list ul a .link_name.center {
+  line-height: 50px;
+}
+
+.description {
+  margin: 40px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.description h5 {
+  display: inline-block;
+  padding: 10px;
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: white;
+  background-color: #BDDEE7;
+}
+
+.content {
+  text-align: center;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #96E4F0;
+  margin: 0px 10px 60px 10px;
+  padding: 25px 10px 10px 10px;
+  position: relative;
+}
+
+.card .content img {
+  border: 1px solid #96E4F0;
+  margin-bottom: 10px;
+}
+
+.card .content .description {
+  color: #707070;
+  font-size: 18px;
+  margin: 0 auto;
+  width: 100%;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.card:before {
+  background-color: white;
+  color: #96E4F0;
+  content: 'POINT1';
+  padding: 5px 20px;
+  border: 1px solid #96E4F0;
+  position: absolute;
+  left: 30px;
+  top: -20px;
+  font-size: 20px;
+}
+
+.card2:before {
+  content: "POINT2";
+}
+
+.card3:before {
+  content: "POINT3";
+}
+
+.card_step {
+  border: 5px solid white;
+  margin: 0px 10px 10px 10px;
+  padding: 25px 10px 10px 10px;
+  position: relative;
+}
+
+.card_step .content img {
+  border: 1px solid #96E4F0;
+  margin-bottom: 10px;
+}
+
+.card_step .content .description_title {
+  color: #35A6B7;
+  font-size: 20px;
+  margin: 10px 0px;
+  font-weight: bold;
+}
+
+.card_step .content .description {
+  color: #707070;
+  font-size: 18px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.card_step:before {
+  background-color: #F3E0E6;
+  color: white;
+  content: 'Step1';
+  font-weight: bold;
+  font-size: 30px;
+  padding: 5px 20px;
+  position: absolute;
+  left: 50%;
+  margin-left: -70px;
+  top: -20px;
+}
+
+.card_step.card2:before {
+  content: "Step2";
+}
+
+.card_step.card3:before {
+  content: "Step3";
+}
+
+.card_step.card4:before {
+  content: "Step4";
+}
+
+.card_allow {
+  margin-bottom: 20px;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  background-color: #96E4F0;
+  color: white;
+  padding-bottom: 50px;
+  margin-top: 60px;
+}
+
+footer .line_parts {
+  height: 10px;
+  background-color: white;
+}
+
+footer ul {
+  margin: 50px 10px;
+}
+
+footer ul li {
+  margin-top: 10px;
+}
+
+footer ul li a {
+  color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+.conversion_button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  color: white;
+  border: white;
+  border-radius: 100vh;
+  background: #01B901;
+}
+
+.conversion_button:hover {
+  background: #6edf6e;
+}
+
+.conversion_button.big {
+  padding: 10px 0;
+  width: 90%;
+  text-align: center;
+  margin: 30px 0px 60px 0px;
+}
+
+.title {
+  text-align: center;
+}
+
+.title img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+h1 {
+  margin: 0 auto;
+  display: inline-block;
+  color: #35A6B7;
+  font-size: 30px;
+  padding: 0 20px 5px 20px;
+  font-weight: bold;
+  margin: 0px 0 30px 0;
+  position: relative;
+  border: 5px solid white;
+  border-width: 0px 0px 5px 0px;
+}
+
+h1:before {
+  position: absolute;
+  bottom: -14px;
+  left: 50%;
+  margin-left: -15px;
+  width: 0;
+  height: 0;
+  content: '';
+  border-width: 14px 12px 0 12px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
+h1:after {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  margin-left: -15px;
+  width: 0;
+  height: 0;
+  content: '';
+  border-width: 14px 12px 0 12px;
+  border-style: solid;
+  border-color: #F3E0E6 transparent transparent transparent;
+}
+
+.desktop {
+  display: none;
+}
+
+@media (max-width: 769px) {
+  .header_color {
+    background: #F3E0E6;
+  }
+  .main_color {
+    color: #96E4F0;
+  }
+  body {
+    background-color: #F3E0E6;
+  }
+  header {
+    height: 65px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .shokai {
+    font-size: 25px;
+    font-weight: bold;
+    display: inline-block;
+    color: #01B901;
+  }
+  .link_list {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .link_list ul a {
+    display: inline-block;
+    border: 2px solid white;
+    color: white;
+    width: 30%;
+    height: 30%;
+    padding: 20px;
+    background: #96E4F0;
+    font-size: 18px;
+    text-align: center;
+  }
+  .link_list ul a .link_name {
+    width: 70px;
+    height: 50px;
+    margin: 0 auto;
+  }
+  .link_list ul a .link_name.center {
+    line-height: 50px;
+  }
+  .description {
+    margin: 40px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .description h5 {
+    display: inline-block;
+    padding: 10px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: #BDDEE7;
+  }
+  .content {
+    text-align: center;
+  }
+  .card {
+    background-color: #fff;
+    border: 1px solid #96E4F0;
+    margin: 0px 10px 60px 10px;
+    padding: 25px 10px 10px 10px;
+    position: relative;
+  }
+  .card .content img {
+    border: 1px solid #96E4F0;
+    margin-bottom: 10px;
+  }
+  .card .content .description {
+    color: #707070;
+    font-size: 18px;
+    margin: 0 auto;
+    width: 100%;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+  .card:before {
+    background-color: white;
+    color: #96E4F0;
+    content: 'POINT1';
+    padding: 5px 20px;
+    border: 1px solid #96E4F0;
+    position: absolute;
+    left: 30px;
+    top: -20px;
+    font-size: 20px;
+  }
+  .card2:before {
+    content: "POINT2";
+  }
+  .card3:before {
+    content: "POINT3";
+  }
+  .card_step {
+    border: 5px solid white;
+    margin: 0px 10px 10px 10px;
+    padding: 25px 10px 10px 10px;
+    position: relative;
+  }
+  .card_step .content img {
+    border: 1px solid #96E4F0;
+    margin-bottom: 10px;
+  }
+  .card_step .content .description_title {
+    color: #35A6B7;
+    font-size: 20px;
+    margin: 10px 0px;
+    font-weight: bold;
+  }
+  .card_step .content .description {
+    color: #707070;
+    font-size: 18px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5rem;
+  }
+  .card_step:before {
+    background-color: #F3E0E6;
+    color: white;
+    content: 'Step1';
+    font-weight: bold;
+    font-size: 30px;
+    padding: 5px 20px;
+    position: absolute;
+    left: 50%;
+    margin-left: -70px;
+    top: -20px;
+  }
+  .card_step.card2:before {
+    content: "Step2";
+  }
+  .card_step.card3:before {
+    content: "Step3";
+  }
+  .card_step.card4:before {
+    content: "Step4";
+  }
+  .card_allow {
+    margin-bottom: 20px;
+  }
+  footer {
+    width: 100%;
+    text-align: center;
+    background-color: #96E4F0;
+    color: white;
+    padding-bottom: 50px;
+    margin-top: 60px;
+  }
+  footer .line_parts {
+    height: 10px;
+    background-color: white;
+  }
+  footer ul {
+    margin: 50px 10px;
+  }
+  footer ul li {
+    margin-top: 10px;
+  }
+  footer ul li a {
+    color: white;
+  }
+  footer a {
+    color: white;
+    text-decoration: underline;
+  }
+  .conversion_button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    color: white;
+    border: white;
+    border-radius: 100vh;
+    background: #01B901;
+  }
+  .conversion_button:hover {
+    background: #6edf6e;
+  }
+  .conversion_button.big {
+    padding: 10px 0;
+    width: 90%;
+    text-align: center;
+    margin: 30px 0px 60px 0px;
+  }
+  .title {
+    text-align: center;
+  }
+  .title img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  h1 {
+    margin: 0 auto;
+    display: inline-block;
+    color: #35A6B7;
+    font-size: 30px;
+    padding: 0 20px 5px 20px;
+    font-weight: bold;
+    margin: 0px 0 30px 0;
+    position: relative;
+    border: 5px solid white;
+    border-width: 0px 0px 5px 0px;
+  }
+  h1:before {
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    margin-left: -15px;
+    width: 0;
+    height: 0;
+    content: '';
+    border-width: 14px 12px 0 12px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+  }
+  h1:after {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -15px;
+    width: 0;
+    height: 0;
+    content: '';
+    border-width: 14px 12px 0 12px;
+    border-style: solid;
+    border-color: #F3E0E6 transparent transparent transparent;
+  }
+  .desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 770px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: unset;
+  }
+  header {
+    padding: 0 200px;
+  }
+  .link_list {
+    margin: 60px 0 100px 0;
+    padding: 0 200px;
+  }
+  .Line_shokai {
+    padding: 0 200px;
+  }
+  .Line_shokai .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .how_to_use {
+    margin-bottom: 50px;
+  }
+  .how_to_use .card_steps {
+    padding: 0 350px;
+  }
+  .how_to_use .card_allow {
+    margin: 30px 0;
+  }
+  .conversion_button.big {
+    padding: 30px 0;
+    font-size: 30px;
+    width: 30%;
+    margin: 30px 0px 100px 0px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

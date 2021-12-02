@@ -17,28 +17,30 @@
         gtag('config', 'UA-134697264-2');
         </script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'css/destroy.css' %}">
+        <link rel="stylesheet" href="{% static 'css/slider.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/destroy.css' %}">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/museum.css' %}">
         <title>ボットで初回</title>
     </head>
     <body>
-       
-        <div class="container">
-            <div class="content container">
-                <div>
+        <header class="header_color">
+            <div class="shokai main_color">#LINEで初回</div>
+            <div>
+                <a href="#" class="conversion_button">お問合せ&nbsp;&nbsp;&nbsp;<img src="img/矢印アイコン　右4 (1).png" height="15px" 1alt="右矢印"></a>
+            </div>
+        </header>
                     {% block content %}
                     {% endblock %}
                 </div>
 
             </div>
         </div>
-        <footer class="container py-5 px-4">
 
-            <a href="/terms" class="text-dark">利用規約</a><br />
-            <a href="/admin" class="text-dark">管理画面</a><br /><br />
-            <p class="text-muted small">All rights reserved by Shono Mercy and <a href="https://otohub.tokyo" class="text-muted">ボットで初回</a>.</p>
-        </footer>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
